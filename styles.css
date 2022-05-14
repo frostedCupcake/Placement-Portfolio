@@ -162,8 +162,7 @@ button {
         width: 80%;
     }
     .windmill {
-        width: 280px;
-        margin: auto;
+        display: none;
     }
     h1 {
         font-size: 3rem;
