@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Site</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon"
+    href="https://cdn-icons.flaticon.com/png/512/1211/premium/1211015.png?token=exp=1649751900~hmac=28de9f272d8d3949c17d8e601e5a80ad">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="container flex">
+      <button class="btn" id='btn' onclick="myFunction()">◑</button>
+    </div>
+  </div>
+
+  <div class="top-container" id="about">
+
+    <h1>I'm Jaswanth.</h1>
+    <h2>From <span>biomedical</span> department</h2>
+  </div>
+  <div class="middle-container" id="skills">
+
+    <script>
+      function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark");
+        console.log(document.getElementsByClassName('card')[0].style.backgroundColor)
+        if (document.getElementsByClassName('card')[0].style.backgroundColor == "rgb(255, 255, 255)") {
+          for (let i = 0; i < 4; i++) {
+            console.log("entered if statement")
+            document.getElementsByClassName('card')[i].style.backgroundColor = 'rgb(3, 3, 3)';
+            document.getElementsByClassName('card')[i].style.color = 'rgb(255, 255, 255)';
+          }
+        } else if (document.getElementsByClassName('card')[0].style.backgroundColor == "") {
+          for (let i = 0; i < 4; i++) {
+            console.log("entered else if statement")
+            document.getElementsByClassName('card')[i].style.backgroundColor = 'rgb(3, 3, 3)';
+            document.getElementsByClassName('card')[i].style.color = 'rgb(255, 255, 255)';
+          }
+
+        }
+        else {
+          for (let i = 0; i < 4; i++) {
+            console.log("entered else statement")
+            document.getElementsByClassName('card')[i].style.backgroundColor = 'rgb(255, 255, 255)';
+            document.getElementsByClassName('card')[i].style.color = 'rgb(3, 3, 3)';
+          }
+        }
+      }
+    </script>
+  </div>
+  <div class="profile">
+    <img class="my-pic" src="https://media.giphy.com/media/0BDWf8bJIRK0oASNpo/giphy.gif" alt="my-pic">
+    <h2>Hello.</h2>
+    <p class="intro">I'm a student who is passionate about learning web development and exploring new technologies.</p>
+  </div>
+  <hr>
+  <div class="skills">
+    <h2>My Skills.</h2>
+    <div class="skill-row">
+      <img class="left container" src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" alt="coding-pic">
+      <div class="card">
+        <h3>Design & Development</h3>
+        <p>I started learning to code because I wanted to make my own websites. Over time, I
+          started gaining experience in design and developing web applications.</p>
+      </div>
+    </div>
+  </div>
+  <div class="skill-row">
+    <img class="right container" src="https://media.giphy.com/media/Y3ksQyRozoCYjMXBQc/giphy.gif" alt="plant-pic">
+    <div class="card">
+      <h3>Gardening</h3>
+      <p>I love planting plants and taking good care of them. Garden is the reflection of
+        heaven on this earth.</p>
+    </div>
+  </div>
+  <div class="skill-row">
+    <img class="left container" src="https://media.giphy.com/media/5nkA5xP6V9JMwpHQnJ/giphy.gif" alt="coding-pic">
+    <div class="card">
+      <h3>Songs</h3>
+      <p>I love listening to pop and rap songs.It can be very relaxing and enjoyable.</p>
+    </div>
+  </div>
+  <div class="skill-row">
+    <img class="right container" src="https://media.giphy.com/media/QxGaDkZNY2PjK9IudM/giphy.gif" alt="plant-pic">
+    <div class="card">
+      <h3>Philosophy</h3>
+      <p>I love learning philosophy because it helps me to expand my mind. I think
+        for long term success in life, learning how to think is far more important than learning what to think. </p>
+    </div>
+  </div>
+  </div>
+  <hr>
+
+  </div>
+
+
+  <div class="bottom-container">
+    <footer class="footer">
+      <div class="grid container">
+        <div>
+          <h1>Jaswanth</h1>
+          <p>Copyright &copy2022</p>
+        </div>
+        <div class="social">
+          <a href=""><i class="fab fa-github fa-2x"></i></a>
+          <a href=""><i class="fab fa-facebook fa-2x"></i></a>
+          <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+          <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+</body>
+
+</html>
