@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: 1.2rem;
     text-align: center;
     font-family: 'Merriweather', serif;
     color: #40514E;
@@ -27,12 +28,60 @@ h3 {
     color: #FF9292;
 
 }
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent;
+    color: #fff;
+    height: 70px;
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+#btn{
+    opacity: 1;
+}
+
 
 .top-container {
     background-color: #FCD1D1;
-    padding: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
-
+#about h1, h2{
+    animation: fadein 3s ease;
 }
 
 
@@ -73,10 +122,14 @@ span {
     width: 50%;
     margin: 100px auto 150px auto;
     text-align: left;
+}
 
+.skills h2{
+    padding: 80px 0;
 }
 
 .middle-container {
+    background-color: white;
     margin: 100px auto 100px auto;
 }
 
@@ -123,7 +176,7 @@ a:hover {
 
 
 .dark {
-    background-color: #222;
+    background-color: #333;
     color: #e6e6e6;
 }
 
@@ -140,10 +193,11 @@ button {
     right: 10%;
     font-size: 4rem;
     border-radius: 100%;
-    padding:0 20px 5px;   
     border: none; 
-    background-color: #FCD1D1;
+    background-color: transparent;
 }
+
+
 
 @media  screen and (max-width:820px) {
     .skill-row {
@@ -152,6 +206,7 @@ button {
     }
     .left {
         float: none;
+
     }
     
     
@@ -178,4 +233,78 @@ button {
         padding: 10px 18px;
     }
 }
+
+/* Footer */
+.grid h1{
+    font-size: 3rem;
+    padding:0;
+    margin: 0;
+}
+
+.grid p{
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer  a{
+    margin: 0px 10px;
+    color: #fff;    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.card-dark{
+    background-color: #333;
+    color: fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+/* Keyframes */
+
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
