@@ -2,131 +2,289 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon"
-    href="https://cdn-icons.flaticon.com/png/512/1211/premium/1211015.png?token=exp=1649751900~hmac=28de9f272d8d3949c17d8e601e5a80ad">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-    rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
 </head>
 
+
+
+
+
 <body>
-  <div class="navbar">
-    <div class="container flex">
-      <button class="btn" id='btn' onclick="myFunction()">◑</button>
-    </div>
-  </div>
-
-  <div class="top-container" id="about">
-
-    <h1>I'm Jaswanth.</h1>
-    <h2>From <span>biomedical</span> department</h2>
-  </div>
-  <div class="middle-container" id="skills">
-
-    <script>
-      function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark");
-        console.log(document.getElementsByClassName('card')[0].style.backgroundColor)
-        if (document.getElementsByClassName('card')[0].style.backgroundColor == "rgb(255, 255, 255)") {
-          for (let i = 0; i < 4; i++) {
-            console.log("entered if statement")
-            document.getElementsByClassName('card')[i].style.backgroundColor = 'rgb(3, 3, 3)';
-            document.getElementsByClassName('card')[i].style.color = 'rgb(255, 255, 255)';
-          }
-        } else if (document.getElementsByClassName('card')[0].style.backgroundColor == "") {
-          for (let i = 0; i < 4; i++) {
-            console.log("entered else if statement")
-            document.getElementsByClassName('card')[i].style.backgroundColor = 'rgb(3, 3, 3)';
-            document.getElementsByClassName('card')[i].style.color = 'rgb(255, 255, 255)';
-          }
-
-        }
-        else {
-          for (let i = 0; i < 4; i++) {
-            console.log("entered else statement")
-            document.getElementsByClassName('card')[i].style.backgroundColor = 'rgb(255, 255, 255)';
-            document.getElementsByClassName('card')[i].style.color = 'rgb(3, 3, 3)';
-          }
-        }
-      }
-    </script>
-  </div>
-  <div class="profile">
-    <img class="my-pic" src="https://media.giphy.com/media/0BDWf8bJIRK0oASNpo/giphy.gif" alt="my-pic">
-    <h2>Hello.</h2>
-    <p class="intro">I'm a student who is passionate about learning web development and exploring new technologies.</p>
-  </div>
-  <hr>
-  <div class="skills">
-    <h2>My Skills.</h2>
-    <div class="skill-row">
-      <img class="left container" src="https://media.giphy.com/media/5Lmn42BCOy99RaGRP7/giphy.gif" alt="coding-pic">
-      <div class="card">
-        <h3>Design & Development</h3>
-        <p>I started learning to code because I wanted to make my own websites. Over time, I
-          started gaining experience in design and developing web applications.</p>
-      </div>
-    </div>
-  </div>
-  <div class="skill-row">
-    <img class="right container" src="https://media.giphy.com/media/Y3ksQyRozoCYjMXBQc/giphy.gif" alt="plant-pic">
-    <div class="card">
-      <h3>Gardening</h3>
-      <p>I love planting plants and taking good care of them. Garden is the reflection of
-        heaven on this earth.</p>
-    </div>
-  </div>
-  <div class="skill-row">
-    <img class="left container" src="https://media.giphy.com/media/5nkA5xP6V9JMwpHQnJ/giphy.gif" alt="coding-pic">
-    <div class="card">
-      <h3>Songs</h3>
-      <p>I love listening to pop and rap songs.It can be very relaxing and enjoyable.</p>
-    </div>
-  </div>
-  <div class="skill-row">
-    <img class="right container" src="https://media.giphy.com/media/QxGaDkZNY2PjK9IudM/giphy.gif" alt="plant-pic">
-    <div class="card">
-      <h3>Philosophy</h3>
-      <p>I love learning philosophy because it helps me to expand my mind. I think
-        for long term success in life, learning how to think is far more important than learning what to think. </p>
-    </div>
-  </div>
-  </div>
-  <hr>
-
-  </div>
 
 
-  <div class="bottom-container">
-    <footer class="footer">
-      <div class="grid container">
-        <div>
-          <h1>Jaswanth</h1>
-          <p>Copyright &copy2022</p>
+
+
+
+
+    <!--                   Section 1 ------ Desktop                 -->
+
+    <section class="desktop container">
+        <div class="container grid grid-4">
+            <div class="card navigation">
+                <h1 class="lg"><img src="sunstone logo cdr 17 version.png" alt=""></h1>
+                <a class="md" href=""><i class="fa-solid fa-house"></i>Dashboard</a>
+                <a class="md" href=""><i class="fa-solid fa-user"></i>Profile</a>
+                <a class="md" href=""><i class="fa-solid fa-suitcase"></i>Opportunities</a>
+
+            </div>
+
+
+
+
+
+            <!-- Intro -->
+            <div class="intro">
+
+                <div class="grid grid-5 container card">
+                    <img class="pic" src="image.png" alt="">
+                    <h1 class="name">Rajat Bhandari</h1>
+                    <ul>
+
+                        <li>Sun ID</li>
+                        <li>Campus</li>
+                        <li>Batch</li>
+                    </ul>
+
+                    <ul>
+                        <li>12323423</li>
+                        <li>NIU, Noida</li>
+                        <li>2019-2022</li>
+                    </ul>
+                    <ul>
+                        <li>Sun ID</li>
+                        <li>Campus</li>
+                        <li>Batch</li>
+                    </ul>
+
+                    <ul>
+                        <li>12323423</li>
+                        <li>NIU, Noida</li>
+                        <li>2019-2022</li>
+                    </ul>
+                </div>
+
+
+
+
+                <!--  Ongoing Applications  -->
+
+                <h1 class="heading">Ongoing Applications</h1>
+                <div class="card application">
+                    <p>Test - SBI - Marketing Analyst</p>
+                    <p><span><i class="fa-solid fa-calendar-days"></i>21st April</span><span><i
+                                class="fa-solid fa-clock"></i>18:00</span>
+                    </p>
+                </div>
+                <div class="card application">
+                    <p>Test - SBI - Marketing Analyst</p>
+                    <p><span><i class="fa-solid fa-calendar-days"></i>21st April</span><span><i
+                                class="fa-solid fa-clock"></i>18:00</span>
+                    </p>
+                </div>
+                <div class="card application">
+                    <p>Test - SBI - Marketing Analyst</p>
+                    <p><span><i class="fa-solid fa-calendar-days"></i>21st April</span><span><i
+                                class="fa-solid fa-clock"></i>18:00</span>
+                    </p>
+                </div>
+                <div class="text-center">
+                    <a href="" class=" blue">View All (100)</a>
+                </div>
+
+
+
+
+
+                <!--  Opportunities  -->
+
+                <h1 class="heading">Opportunities</h1>
+                <div class="card application">
+                    <p>SBI - Marketing Analyst</p>
+                    <p><span>21st April</span>• Full Time<span><span></span>• Bangalore</span></p>
+                    <button class="btn1">APPLY</button>
+                    <button class="btn2">NOT INTRESTED</button>
+                </div>
+
+                <div class="card application">
+                    <p>SBI - Marketing Analyst</p>
+                    <p><span>21st April</span>• Full Time<span><span></span>• Bangalore</span></p>
+                    <button class="btn1">APPLY</button>
+                    <button class="btn2">NOT INTRESTED</button>
+                </div>
+                <div class="card application">
+                    <p>SBI - Marketing Analyst</p>
+                    <p><span>21st April</span>• Full Time<span><span></span>• Bangalore</span></p>
+                    <button class="btn1">APPLY</button>
+                    <button class="btn2">NOT INTRESTED</button>
+                </div>
+                <div class="text-center">
+                    <a href="" class=" blue">View All (100)</a>
+                </div>
+            </div>
+            <div>
+
+
+
+
+                <!-- Notification -->
+
+                <div class="card notification">
+                    <p><span>Notifi</span>cation</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, nesciunt.</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="" class=" blue">View More</a>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Help -->
+
+                <div class="card help">
+                    <img src="Group.png" alt="">
+                    <h1>Need help?</h1>
+                    <p>Do you have any problem and want to consult?</p>
+                    <button class="btn">Contact Now</button>
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+    <!--              Section 2 ----- Mobile                     -->
+
+    <section class="mobile">
+
+
+
+
+
+        <!--   Navbar    -->
+
+        <div class="navbar">
+            <div class="container flex">
+                <h1 class="lg"><img src="sunstone logo cdr 17 version.png" alt=""></h1>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+                    <li><a href=""><img class="user-pic" src="User-Pic.png" alt=""></a></li>
+                </ul>
+            </div>
         </div>
-        <div class="social">
-          <a href=""><i class="fab fa-github fa-2x"></i></a>
-          <a href=""><i class="fab fa-facebook fa-2x"></i></a>
-          <a href=""><i class="fab fa-instagram fa-2x"></i></a>
-          <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+
+
+
+
+
+        <!--   Opportunities Card    -->
+
+        <div class="Opportunities-card container grid text-center">
+            <div class="card">
+                <p>New</p>
+                <p>Opportunities</p>
+                <hr>
+                <p class="number">24</p>
+            </div>
+            <div class="card">
+                <p>Hot</p>
+                <p>Opportunities</p>
+                <hr>
+                <p class="number">24</p>
+            </div>
 
         </div>
-      </div>
-    </footer>
+
+
+
+
+        <!--   Ongoing Applications   -->
+
+        <h1 class="heading">Ongoing Applications</h1>
+        <div class="card application">
+            <p>Test - SBI - Marketing Analyst</p>
+            <p><span><i class="fa-solid fa-calendar-days"></i>21st April</span><span><i
+                        class="fa-solid fa-clock"></i>18:00</span>
+            </p>
+        </div>
+        <div class="card application">
+            <p>Test - SBI - Marketing Analyst</p>
+            <p><span><i class="fa-solid fa-calendar-days"></i>21st April</span><span><i
+                        class="fa-solid fa-clock"></i>18:00</span>
+            </p>
+        </div>
+        <div class="card application">
+            <p>Test - SBI - Marketing Analyst</p>
+            <p><span><i class="fa-solid fa-calendar-days"></i>21st April</span><span><i
+                        class="fa-solid fa-clock"></i>18:00</span>
+            </p>
+        </div>
+        <div class="text-center">
+            <button class="btn1"> View All (100)</button>
+        </div>
+
+
+
+
+        <!--  Opportunities  -->
+
+        <h1 class="heading">Opportunities</h1>
+        <div class="card application">
+            <p>SBI - Marketing Analyst</p>
+            <p><span>21st April</span>• Full Time<span><span></span>• Bangalore</span></p>
+
+        </div>
+
+        <div class="card application">
+            <p>SBI - Marketing Analyst</p>
+            <p><span>21st April</span>• Full Time<span><span></span>• Bangalore</span></p>
+
+        </div>
+        <div class="card application">
+            <p>SBI - Marketing Analyst</p>
+            <p><span>21st April</span>• Full Time<span><span></span>• Bangalore</span></p>
+
+        </div>
+        <div class="text-center">
+            <button class="btn1"> View All (100)</button>
+        </div>
+        </div>
+
+
+
+
+
+        <!-- footer -->
+
+        <footer class="container bottom flex">
+            <a class="md" href=""><i class="fa-solid fa-house"></i></a>
+            <a class="md" href=""><i class="fa-solid fa-user"></i></a>
+            <a class="md" href=""><i class="fa-solid fa-suitcase"></i></a>
+
+        </footer>
+    </section>
+
 
 
 
 </body>
+
+
+
+
 
 </html>
